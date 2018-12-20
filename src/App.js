@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Jumbotron from './components/Jumbotron';
+import ClickGame from './components/ClickGame';
 import './App.css';
 
 class App extends Component {
+  state = {
+    score: 0,
+    topScore: 0
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div className="container-fluid">
+          <Jumbotron>
+            <div className="container">
+              <div className="row">
+                <div className="col-12">
+                  <header className="App-header">
+                    <div className="display-1">Bacon Me Crazy!</div>
+                    <h1>Click on the bacons (Kevin or regular) without repeating yourself</h1>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </Jumbotron>
+        </div>
+        <ClickGame />
       </div>
     );
   }

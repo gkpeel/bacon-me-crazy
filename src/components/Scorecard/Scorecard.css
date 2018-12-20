@@ -1,0 +1,4 @@
+.scorecard {
+    display: flex;
+    justify-content: space-between;
+}
