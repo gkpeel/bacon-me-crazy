@@ -10,22 +10,18 @@ const imgStyle = {
 }
 
 class App extends Component {
-  state = {
-    score: 0,
-    topScore: 0
-  }
 
   render() {
     return (
       <div className="App">
-        <div className="container-fluid">
+        <div className="container-fluid heading">
           <Jumbotron>
             <div className="container">
               <div className="row">
                 <div className="col-md-9 order-2 order-md-1">
                   <header className="App-header">
-                    <div className="display-1">Bacon Me Crazy!</div>
-                    <h1>Click on the bacons (Kevin or regular) without repeating yourself</h1>
+                    <div className="display-1 mb-4">Bacon Me Crazy!</div>
+                    <h1 className="w-75 font-weight-light font-italic">Click on the bacons (Kevin or regular) without repeating yourself</h1>
                   </header>
                 </div>
                 <div className="col-md-3 order-1 order-md-2">

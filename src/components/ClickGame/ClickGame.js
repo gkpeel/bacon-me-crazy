@@ -6,7 +6,6 @@ import Image from '../Image/Image';
 
 class ClickGame extends React.Component {
     state = {
-        gameOver: true,
         score: 0,
         topScore: 0,
         bacons,
@@ -46,7 +45,7 @@ class ClickGame extends React.Component {
         return (
             <div className="container-fluid">
                 <Scorecard score={this.state.score} topScore={this.state.topScore} />
-                <div className="row no-gutters">
+                <div className="row no-gutters mb-5">
                     {this.shuffle(bacons).map(bacon =>
                         <Image
                             makeGuess={this.makeGuess}

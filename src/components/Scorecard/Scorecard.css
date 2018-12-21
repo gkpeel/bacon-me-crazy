@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #fafafa;
+    background-color: #999;
+    color: #ddd;
 }
 
 .scorecard p {
