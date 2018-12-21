@@ -1,4 +1,15 @@
 .scorecard {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
+    background-color: #fafafa;
+}
+
+.scorecard p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.fixed-bottom-offset {
+    height: 56px;
 }

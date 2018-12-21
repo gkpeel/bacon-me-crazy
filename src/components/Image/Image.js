@@ -1,4 +1,5 @@
 import React from 'react';
+import './Image.css';
 
 const Image = props => (
     <div className="col-6 col-sm-4 col-md-3 card-container" onClick={() => props.makeGuess(props.id)}>
